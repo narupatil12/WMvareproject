@@ -7,7 +7,7 @@
     </div>
 
     <div class="card-body" style="background-color: rgb(243, 243, 234);">
-        <form>
+        <form [formGroup]="registerForm" (ngSubmit)="onSubmit()>
 
             <div class="row">
                 <h4 style="color: green;">1. Are You..</h4>
