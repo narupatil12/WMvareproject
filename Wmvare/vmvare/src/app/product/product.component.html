@@ -1,5 +1,5 @@
 <div class="card shadow-sm" style="border: 1px solid #eff0f3 ;padding: 65px;">
-    <div style="" class="card-header card-header-color ">
+    <div class="card-header card-header-color ">
         <span style="font-size: 30px; color: blue;">TCO Comparison Calculator</span>
 
         <p style="margin-top: auto;"> See how total cost of ownership is lower with VMware server virtualization and</p>
@@ -7,301 +7,300 @@
     </div>
 
     <div class="card-body" style="background-color: rgb(243, 243, 234);">
-        <form [formGroup]="registerForm" (ngSubmit)="onSubmit()>
+    
 
-            <div class="row">
+            <div class=" row"> 
                 <h4 style="color: green;">1. Are You..</h4>
-                <div class="col-md-3 col-6 mb-3">
-                    <div class="tiels-box shadow text-center" id="IQA"
-                        style="background: #0b72e7; border-radius: 15px;">
-                        <div class="tiels-icon">
-                            <i class="fab fa-accessible-icon fa-7x"></i>
-                        </div>
-                        <div class="content-details">
-                            <h4 class="content-title" style="color: white;">
-                                Creating a New infrastructure?
-                            </h4>
-                        </div>
-                        <hr style="color: white;">
-                        <div class="overlay-bottom" style="color: white;">Customize your deployement</div>
-                    </div>
+            <div class="col-md-3 col-6 mb-3">
+            <div class="tiels-box shadow text-center" id="IQA" style="background: #0b72e7; border-radius: 15px;">
+                <div class="tiels-icon">
+                    <i class="fab fa-accessible-icon fa-7x"></i>
                 </div>
-
-                <div class="col-md-3 col-6 mb-3" style="float: right;">
-                    <div class="tiels-box shadow text-center" id="IQA"
-                        style="background: rgb(219, 215, 215); border-radius: 15px;">
-                        <div class="tiels-icon">
-                            <i class="fab fa-accessible-icon fa-7x"></i>
-                        </div>
-                        <div class="content-details">
-                            <h4 class="content-title" style="color: rgb(61, 59, 59);">
-                                upgrading to a vcloud suite?
-                            </h4>
-                        </div>
-                        <hr style="color: black;">
-                        <div class="overlay-bottom" style="color: rgb(34, 30, 30);">Move Up to private cloud</div>
-                    </div>
+                <div class="content-details">
+                    <h4 class="content-title" style="color: white;">
+                        Creating a New infrastructure?
+                    </h4>
                 </div>
-                    <div class="col-md-4">
-                    <app-features></app-features>
-                   </div>
-                
+                <hr style="color: white;">
+                <div class="overlay-bottom" style="color: white;">Customize your deployement</div>
             </div>
-
-            <hr>
-
-            <div class="row">
-                <h4 style="color: green;">2.Currency</h4>
-                <div class="input-group col-md-4" style="border-radius: 15px;">
-                    <input type="text" class="form-control" aria-label="Text input with dropdown button"
-                        placeholder="Select">
-                    <div class="input-group-append">
-                        <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false"> </button>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Indian Rs</a>
-                            <a class="dropdown-item" href="#">Dollar</a>
-                            <a class="dropdown-item" href="#">Euro</a>
-                        </div>
-                    </div>
-                </div>
+          </div>
             </div>
+        
 
-            <hr>
-
-
-            <div class="row">
-                <h4 style="color: green;">3.How many virtual machines do you want to deploy?</h4>
-                <div class="col-md-4">
-                    <input style="background-color: rgb(213, 217, 223);" type="text" class="form-control"
-                        aria-label="Text input with bg-dark">
+        <div class="col-md-3 col-6 mb-3" style="float: right;">
+            <div class="tiels-box shadow text-center" id="IQA"
+                style="background: rgb(219, 215, 215); border-radius: 15px;">
+                <div class="tiels-icon">
+                    <i class="fab fa-accessible-icon fa-7x"></i>
                 </div>
+                <div class="content-details">
+                    <h4 class="content-title" style="color: rgb(61, 59, 59);">
+                        upgrading to a vcloud suite?
+                    </h4>
+                </div>
+                <hr style="color: black;">
+                <div class="overlay-bottom" style="color: rgb(34, 30, 30);">Move Up to private cloud</div>
             </div>
+        </div>
+        <div class="col-md-4">
+            <app-features></app-features>
+        </div>
 
-            <hr>
+</div>
 
-            <div class="row">
-                <h4 style="color: green;">4.Which VMware product edition would you like</h4>
-                <h4 style="color: green;">to compare with Microsoft's solution?</h4>
-                <h5 style="color: darkblue;">>Not sure what you want?</h5>
+<hr>
 
-                <div class="row">
-                    <div class="col-md-2">
-                        <h6 style="line-height: normal;">vSphere</h6>
-                        <h6 style="line-height: normal;">Essentials</h6> <br>
-                        <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="defaultUnchecked">
-                            <label class="custom-control-label ml-3" for="defaultUnchecked"></label>
-                        </div>
-                    </div>
-
-                    <div class="col-md-2">
-                        <h6 style="line-height: normal;">vSphere</h6>
-                        <h6 style="line-height: normal;">Essentials Plus</h6> <br>
-                        <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="defaultUnchecked1">
-                            <label class="custom-control-label ml-3" for="defaultUnchecked1"></label>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="row">
-                    <div class="col-md-2">
-                        <h6 style="line-height: normal;">vSphere</h6>
-                        <h6 style="line-height: normal;">Essentials</h6> <br>
-                        <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="defaultUnchecked2">
-                            <label class="custom-control-label ml-3" for="defaultUnchecked2"></label>
-                        </div>
-                    </div>
-
-                    <div class="col-md-2">
-                        <h6 style="line-height: normal;">vSphere</h6>
-                        <h6 style="line-height: normal;">Essentials Plus</h6> <br>
-                        <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="defaultUnchecked3">
-                            <label class="custom-control-label ml-3" for="defaultUnchecked3"></label>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="row">
-                    <div class="col-md-2">
-                        <h6 style="line-height: normal;">vSphere</h6>
-                        <h6 style="line-height: normal;">Essentials</h6> <br>
-                        <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="defaultUnchecked4">
-                            <label class="custom-control-label ml-3" for="defaultUnchecked4"></label>
-                        </div>
-                    </div>
-
-                    <div class="col-md-2">
-                        <h6 style="line-height: normal;">vSphere</h6>
-                        <h6 style="line-height: normal;">Essentials Plus</h6> <br>
-                        <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="defaultUnchecked5">
-                            <label class="custom-control-label ml-3" for="defaultUnchecked5"></label>
-                        </div>
-                    </div>
-
-                </div>
+<div class="row">
+    <h4 style="color: green;">2.Currency</h4>
+    <div class="input-group col-md-4" style="border-radius: 15px;">
+        <input type="text" class="form-control" aria-label="Text input with dropdown button" placeholder="Select">
+        <div class="input-group-append">
+            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false"> </button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Indian Rs</a>
+                <a class="dropdown-item" href="#">Dollar</a>
+                <a class="dropdown-item" href="#">Euro</a>
             </div>
-
-            <hr>
-            <div class="row">
-                <h4 style="color: green;">5.What virtualization host type would you like to use?</h4>
-
-
-                <div class="row">
-                    <div class="col-md-2">
-                        <h6 style="line-height: normal;">Server A</h6>
-
-                        <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="defaultUnchecked6">
-                            <label class="custom-control-label ml-3" for="defaultUnchecked6"></label>
-                        </div>
-                    </div>
-
-                    <div class="col-md-2">
-                        <h6 style="line-height: normal;">Server B</h6>
-
-                        <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="defaultUnchecked7">
-                            <label class="custom-control-label ml-3" for="defaultUnchecked7"></label>
-                        </div>
-                    </div>
-
-                    <div class="col-md-2">
-                        <h6 style="line-height: normal;">Server C</h6>
-
-                        <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="defaultUnchecked8">
-                            <label class="custom-control-label ml-3" for="defaultUnchecked8"></label>
-                        </div>
-                    </div>
-
-                </div>
-
-
-            </div>
-
-            <hr>
-            <div class="row">
-                <h4 style="color: green;">6.What type of storage would ypu like to employ?</h4>
-
-
-                <div class="row">
-                    <div class="col-md-2">
-                        <h6 style="line-height: normal;">NAS</h6>
-
-                        <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="defaultUnchecked9">
-                            <label class="custom-control-label ml-3" for="defaultUnchecked9"></label>
-                        </div>
-                    </div>
-
-                    <div class="col-md-2">
-                        <h6 style="line-height: normal;">iSCSI SAN</h6>
-
-                        <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="defaultUnchecked10">
-                            <label class="custom-control-label ml-3" for="defaultUnchecked10"></label>
-                        </div>
-                    </div>
-
-                    <div class="col-md-2">
-                        <h6 style="line-height: normal;">FC SAN</h6>
-
-                        <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="defaultUnchecked11">
-                            <label class="custom-control-label ml-3" for="defaultUnchecked11"></label>
-                        </div>
-                    </div>
-
-                </div>
-
-
-            </div>
-
-            <hr>
-            <div class="row">
-                <h4 style="color: green;">7.Infrastructure costs - Electricity</h4>
-
-
-                <div class="row">
-                    <div class="col-md-2">
-                        <h6 style="line-height: normal;">Low</h6>
-
-                        <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="defaultUnchecked10">
-                            <label class="custom-control-label ml-3" for="defaultUnchecked9"></label>
-                        </div>
-                    </div>
-
-                    <div class="col-md-2">
-                        <h6 style="line-height: normal;">Medium</h6>
-
-                        <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="defaultUnchecked11">
-                            <label class="custom-control-label ml-3" for="defaultUnchecked10"></label>
-                        </div>
-                    </div>
-
-                    <div class="col-md-2">
-                        <h6 style="line-height: normal;">high</h6>
-
-                        <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="defaultUnchecked12">
-                            <label class="custom-control-label ml-3" for="defaultUnchecked11"></label>
-                        </div>
-                    </div>
-
-                </div>
-
-
-            </div>
-
-            <hr>
-            <div class="row">
-                <h4 style="color: green;">8.Infrastructure Costs- Data Center real estate and build <output></output></h4>
-
-
-                <div class="row">
-                    <div class="col-md-2">
-                        <h6 style="line-height: normal;">Low</h6>
-
-                        <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="defaultUnchecked9">
-                            <label class="custom-control-label ml-3" for="defaultUnchecked9"></label>
-                        </div>
-                    </div>
-
-                    <div class="col-md-2">
-                        <h6 style="line-height: normal;">Medium</h6>
-
-                        <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="defaultUnchecked10">
-                            <label class="custom-control-label ml-3" for="defaultUnchecked10"></label>
-                        </div>
-                    </div>
-
-                    <div class="col-md-2">
-                        <h6 style="line-height: normal;">High</h6>
-
-                        <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="defaultUnchecked11">
-                            <label class="custom-control-label ml-3" for="defaultUnchecked11"></label>
-                        </div>
-                    </div>
-
-                </div>
-
-
-            </div>
-
-
-        </form>
+        </div>
     </div>
+</div>
+
+<hr>
+
+
+<div class="row">
+    <h4 style="color: green;">3.How many virtual machines do you want to deploy?</h4>
+    <div class="col-md-4">
+        <input style="background-color: rgb(213, 217, 223);" type="text" class="form-control"
+            aria-label="Text input with bg-dark">
+    </div>
+</div>
+
+<hr>
+
+<div class="row">
+    <h4 style="color: green;">4.Which VMware product edition would you like</h4>
+    <h4 style="color: green;">to compare with Microsoft's solution?</h4>
+    <h5 style="color: darkblue;">>Not sure what you want?</h5>
+
+    <div class="row">
+        <div class="col-md-2">
+            <h6 style="line-height: normal;">vSphere</h6>
+            <h6 style="line-height: normal;">Essentials</h6> <br>
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="defaultUnchecked">
+                <label class="custom-control-label ml-3" for="defaultUnchecked"></label>
+            </div>
+        </div>
+
+        <div class="col-md-2">
+            <h6 style="line-height: normal;">vSphere</h6>
+            <h6 style="line-height: normal;">Essentials Plus</h6> <br>
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="defaultUnchecked1">
+                <label class="custom-control-label ml-3" for="defaultUnchecked1"></label>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-md-2">
+            <h6 style="line-height: normal;">vSphere</h6>
+            <h6 style="line-height: normal;">Essentials</h6> <br>
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="defaultUnchecked2">
+                <label class="custom-control-label ml-3" for="defaultUnchecked2"></label>
+            </div>
+        </div>
+
+        <div class="col-md-2">
+            <h6 style="line-height: normal;">vSphere</h6>
+            <h6 style="line-height: normal;">Essentials Plus</h6> <br>
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="defaultUnchecked3">
+                <label class="custom-control-label ml-3" for="defaultUnchecked3"></label>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-md-2">
+            <h6 style="line-height: normal;">vSphere</h6>
+            <h6 style="line-height: normal;">Essentials</h6> <br>
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="defaultUnchecked4">
+                <label class="custom-control-label ml-3" for="defaultUnchecked4"></label>
+            </div>
+        </div>
+
+        <div class="col-md-2">
+            <h6 style="line-height: normal;">vSphere</h6>
+            <h6 style="line-height: normal;">Essentials Plus</h6> <br>
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="defaultUnchecked5">
+                <label class="custom-control-label ml-3" for="defaultUnchecked5"></label>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<hr>
+<div class="row">
+    <h4 style="color: green;">5.What virtualization host type would you like to use?</h4>
+
+
+    <div class="row">
+        <div class="col-md-2">
+            <h6 style="line-height: normal;">Server A</h6>
+
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="defaultUnchecked6">
+                <label class="custom-control-label ml-3" for="defaultUnchecked6"></label>
+            </div>
+        </div>
+
+        <div class="col-md-2">
+            <h6 style="line-height: normal;">Server B</h6>
+
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="defaultUnchecked7">
+                <label class="custom-control-label ml-3" for="defaultUnchecked7"></label>
+            </div>
+        </div>
+
+        <div class="col-md-2">
+            <h6 style="line-height: normal;">Server C</h6>
+
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="defaultUnchecked8">
+                <label class="custom-control-label ml-3" for="defaultUnchecked8"></label>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+
+<hr>
+<div class="row">
+    <h4 style="color: green;">6.What type of storage would ypu like to employ?</h4>
+
+
+    <div class="row">
+        <div class="col-md-2">
+            <h6 style="line-height: normal;">NAS</h6>
+
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="defaultUnchecked9">
+                <label class="custom-control-label ml-3" for="defaultUnchecked9"></label>
+            </div>
+        </div>
+
+        <div class="col-md-2">
+            <h6 style="line-height: normal;">iSCSI SAN</h6>
+
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="defaultUnchecked10">
+                <label class="custom-control-label ml-3" for="defaultUnchecked10"></label>
+            </div>
+        </div>
+
+        <div class="col-md-2">
+            <h6 style="line-height: normal;">FC SAN</h6>
+
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="defaultUnchecked11">
+                <label class="custom-control-label ml-3" for="defaultUnchecked11"></label>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+
+<hr>
+<div class="row">
+    <h4 style="color: green;">7.Infrastructure costs - Electricity</h4>
+
+
+    <div class="row">
+        <div class="col-md-2">
+            <h6 style="line-height: normal;">Low</h6>
+
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="defaultUnchecked10">
+                <label class="custom-control-label ml-3" for="defaultUnchecked9"></label>
+            </div>
+        </div>
+
+        <div class="col-md-2">
+            <h6 style="line-height: normal;">Medium</h6>
+
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="defaultUnchecked11">
+                <label class="custom-control-label ml-3" for="defaultUnchecked10"></label>
+            </div>
+        </div>
+
+        <div class="col-md-2">
+            <h6 style="line-height: normal;">high</h6>
+
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="defaultUnchecked12">
+                <label class="custom-control-label ml-3" for="defaultUnchecked11"></label>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+
+<hr>
+<div class="row">
+    <h4 style="color: green;">8.Infrastructure Costs- Data Center real estate and build <output></output></h4>
+
+
+    <div class="row">
+        <div class="col-md-2">
+            <h6 style="line-height: normal;">Low</h6>
+
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="defaultUnchecked9">
+                <label class="custom-control-label ml-3" for="defaultUnchecked9"></label>
+            </div>
+        </div>
+
+        <div class="col-md-2">
+            <h6 style="line-height: normal;">Medium</h6>
+
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="defaultUnchecked10">
+                <label class="custom-control-label ml-3" for="defaultUnchecked10"></label>
+            </div>
+        </div>
+
+        <div class="col-md-2">
+            <h6 style="line-height: normal;">High</h6>
+
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="defaultUnchecked11">
+                <label class="custom-control-label ml-3" for="defaultUnchecked11"></label>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+
+
+
 </div>
