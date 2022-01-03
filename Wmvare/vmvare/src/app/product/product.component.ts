@@ -1,36 +1,29 @@
-import {  OnInit } from '@angular/core';
-import { Component } from '@angular/core';
-import { FormGroup, FormControl, Validators }  from '@angular/forms';
-
-
+import { Component, OnInit } from '@angular/core';
+import { AsyncValidatorFn, FormArray, FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-product',
   templateUrl: './product.component.html',
-  styleUrls: ['./product.component.css'],
-  
+  styleUrls: ['./product.component.css']
 })
 export class ProductComponent implements OnInit {
-  
+
+  registerForm: FormGroup | undefined;
+  forbiddenNames: any;
+  forbiddenEmails: AsyncValidatorFn | AsyncValidatorFn[] | null | undefined;
+
   constructor() { }
 
-  formAlta: FormGroup | undefined;
+  ngOnInit(): void {
 
-  ngOnInit() {
-     this.formAlta = new FormGroup({
-       idPro: new FormControl(),
-       documentTypePro: new FormControl(),
-       namePro: new FormControl('',[Validators.required]),
-       firstSurnamePro: new FormControl(),
-       secondSurnamePro: new FormControl(),
-       businessNamePro: new FormControl(),
-       idCli: new FormControl(),
-       documentTypeCli: new FormControl(),
-       nameCli: new FormControl('',Validators.required),
-       firstSurnameCli: new FormControl(),
-       secondSurnameCli: new FormControl(),
-       businessNameCli: new FormControl(),      
-     });
-   }
+    this.registerForm = new FormGroup({
+      'userData': new FormGroup({
+          'username':new FormControl(null,[Validators.required,this.forbiddenNames.bind(this)]),
+          'email':new FormControl(null,[Validators.required,Validators.email],this.forbiddenEmails),
+      }),
+      'gender':new FormControl('female'),
+      'hobbies':new FormArray([])
+    });
+  }
 
 }
